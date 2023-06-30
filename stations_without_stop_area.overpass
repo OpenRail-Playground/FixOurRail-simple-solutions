@@ -1,0 +1,20 @@
+[out:json][timeout:25];
+{{geocodeArea:"Pays de la Loire"}}->.region;
+// We are looking for stations without a relation stop_area
+(
+  node[railway=station][disused!=yes](area.region);
+  way[railway=station][disused!=yes](area.region);
+) -> .stations;
+
+rel[public_transport=stop_area](area.region);
+(
+	node[railway=station](r);
+ 	way[railway=station](r);
+) -> .stations_of_stopareas;
+  
+
+(.stations; - .stations_of_stopareas;);
+
+out body;
+>;
+out skel qt;
