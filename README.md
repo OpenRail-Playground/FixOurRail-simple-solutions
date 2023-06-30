@@ -1,6 +1,6 @@
-# Our Cool Project
+# Fix Our Rail - Find them all!
 
-*Short description what the project is about*
+We identify typical errors with railway data in OpenStreetMap. OSM data is very high quality already
 
 ## Background
 
