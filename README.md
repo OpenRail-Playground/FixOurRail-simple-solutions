@@ -1,14 +1,14 @@
 # Fix Our Rail - Find them all!
 
 We identify typical errors with railway data in OpenStreetMap. OSM data is very
-high quality already and is used in professional applications, e.g.
+high quality already and is used in professional applications, e.g.,
 [OSRD](https://osrd.fr/en/).
 
 During the hackathon, we found algorithms to spot
 
 * disconnected tracks
-* suspocious switches
-* stations apart from tracks (e.g. missing relation)
+* suspicious switches
+* stations apart from tracks (e.g., missing relation)
 * weird track angles
 * missing gauge information
 
@@ -26,7 +26,7 @@ This project has been initiated during the [Dreiländerhack 2023](https://bcc.oe
 
 We have tried to set up a productive [Osmose](https://osmose.openstreetmap.fr/)
 instance but ran into issues. Therefore, we used a local dev instance and put
-the issues via XML via the API into a frontend.
+the issues via XML via the API into a front end.
 
 The hacky scripts to create these reports are in this repositories and will be
 further developed.
